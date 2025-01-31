@@ -147,13 +147,13 @@ h5 {
   .product_list_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(5, auto); */
+    grid-template-rows: repeat(5, auto);
   }
 
   .kort {
     display: grid;
     grid-row: span 5;
-    /* grid-template-rows: subgrid; */
+    grid-template-rows: subgrid;
   }
 
   .soldout1 {
