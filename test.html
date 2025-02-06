@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Liste</h1>
+    <ul></ul>
+
+    <script>
+        const personer = ["Peter", "Troels", "Keld"]
+
+        console.log(personer);
+
+        const li_elementer = personer.map(element => `<li>Navn: ${element}</li>`).join("");
+
+        console.log(li_elementer);
+
+        li_elementer.join();
+        const string = li_elementer;
+
+        console.log(string);
+
+        document.querySelector("ul").innerHTML = string;
+
+    </script>
+
+</body>
+
+</html>

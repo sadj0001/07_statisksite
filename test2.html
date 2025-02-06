@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Playliste</h2>
+    <ul id="playliste"></ul>
+
+    <script>
+        const playliste = ["Two of us", "Pokerface", "Please please please", "Espresso", "Just dance", "Baby", "Blinding lights", "I've  got a feeling", "Eenie meenie"]
+
+        console.log(playliste);
+
+        const li_elementer = playliste.map(element => `<li>${element}</li>`).join("");
+        console.log(li_elementer);
+
+        const string = li_elementer;
+
+        console.log(string);
+        document.querySelector("#playliste").innerHTML = string;
+    </script>
+</body>
+
+</html>
